@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <style>
+        body {
+            background-image: url("./images/background3.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        .logo {
+            width: 200px;
+            height: 150px;
+        }
+
+        h1 {      /*tao khung ten va thay doi mau*/
+            margin-top: 20px;
+            cursor: pointer;
+            font-size: 22px;
+            color: rgb(33, 211, 13);
+            border: 2px solid #b25716;
+            border-radius: 10px;
+        }
+        h1:hover {
+            background-color: #da0e0e; /* Thay đổi màu nền khi kéo chuột vào */
+            color: #1811e5; /* Thay đổi màu chữ khi kéo chuột vào */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">
+            <img class="logo" src="./images/logo.png" alt="Logo">
+            <h1>Shop Linh Kiện Điện Tử</h1>
+        </a>
+    </div>
+</body>
+</html>

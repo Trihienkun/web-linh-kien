@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đăng nhập</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("./images/backgroud4.png");
+      background-size: cover;
+      background-position: center; /* Căn chỉnh hình nền vào giữa */
+      background-repeat: no-repeat; /* Không lặp lại hình nền */
+    }
+    form {
+      background-color: rgba(255, 255, 255, 0.264); /* Màu nền trong suốt */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Đổ bóng */
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 300px;
+      background-color: transparent; /* Đặt màu nền của bảng trong suốt */
+    }
+    tr th {
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 2px solid #000;
+      background-color: #f8f8f8;
+    }
+    tr td {
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 1m); /*độ rộng khung đăng nập mật khau*/
+      padding: 5px;
+      border: 1px solid #ddd;
+      margin: 5px 0;
+      box-sizing: border-box; 
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #15ea15;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu nền */
+      border-radius: 10px;
+    }
+    input[type="submit"]:hover {
+      background-color: #0dcb0d;
+    }
+    .change-password {
+      text-align: center;
+      padding: 10px;
+    }
+    .change-password a {
+      color: rgb(241, 33, 133);
+      text-decoration: none;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <table>
+      <tr>
+        <th colspan="2">ĐĂNG NHẬP</th>
+      </tr>
+      <tr>
+        <td>Tên đăng nhập:</td>
+        <td><input type="text" name="username"></td>
+      </tr>
+      <tr>
+        <td>Mật khẩu:</td>
+        <td><input type="password" name="password"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="border-bottom: none;"><input type="submit" value="Đăng Nhập"></td>
+      </tr>
+      <tr>
+        <td class="change-password" colspan="2"><a href="Doimatkhau.html">Đổi mật khẩu</a></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
